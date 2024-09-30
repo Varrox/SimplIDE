@@ -1,16 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://skq2vkyerb7l"]
+[gd_scene load_steps=3 format=3 uid="uid://skq2vkyerb7l"]
+
+[ext_resource type="Script" path="res://codehelper.gd" id="1_14kli"]
 
 [sub_resource type="CodeHighlighter" id="CodeHighlighter_13shc"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TextEdit" type="CodeEdit" parent="."]
+[node name="TextEdit" type="TextEdit" parent="."]
 offset_left = 32.0
 offset_top = 73.0
 offset_right = 897.0
 offset_bottom = 581.0
 syntax_highlighter = SubResource("CodeHighlighter_13shc")
-code_completion_enabled = true
+script = ExtResource("1_14kli")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 95.0
